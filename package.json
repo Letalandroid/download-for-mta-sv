@@ -1,0 +1,21 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "python3 main.py",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Letalandroid/downloadmusic-for-mta-server.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Letalandroid/downloadmusic-for-mta-server/issues"
+	},
+	"homepage": "https://github.com/Letalandroid/downloadmusic-for-mta-server#readme"
+}
