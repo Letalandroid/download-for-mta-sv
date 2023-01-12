@@ -1,3 +1,4 @@
 pytube
 flask
 flask_cors
+cloudinary
