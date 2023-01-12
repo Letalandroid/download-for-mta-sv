@@ -4,6 +4,4 @@ flask_cors
 pathlib
 dotenv
 cloudinary
-cloudinary.api
-cloudinary.uploader
 json
