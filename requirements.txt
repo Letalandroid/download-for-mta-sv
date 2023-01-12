@@ -1,7 +1,5 @@
 pytube
 flask
 flask_cors
-pathlib
-dotenv
 cloudinary
 json
