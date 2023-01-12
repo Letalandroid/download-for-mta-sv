@@ -78,5 +78,5 @@ def index():
 PORT = os.getenv('PORT')
 
 if __name__ == '__main__':
-    app.run('0.0.0.0:{PORT}')
+    app.run('0.0.0.0')
 
