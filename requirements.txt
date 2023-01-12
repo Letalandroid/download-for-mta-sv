@@ -1,3 +1,6 @@
 pytube
 flask
 flask_cors
+dotenv
+cloudinary
+json
