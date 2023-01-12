@@ -5,8 +5,6 @@ from urllib.parse import quote
 from flask import Flask, request, render_template
 from flask_cors import CORS
 from pathlib import Path
-from dotenv import load_dotenv
-load_dotenv()
 
 # Import the Cloudinary libraries
 # ==============================
