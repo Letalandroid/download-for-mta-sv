@@ -15,6 +15,7 @@ import cloudinary
 # Import to format the JSON responses
 # ==============================
 import json
+PORT = ""
 
 # Set configuration parameter: return "https" URLs by setting secure=true
 # ==============================
@@ -73,5 +74,5 @@ def index():
     return response_data
 
 if __name__ == '__main__':
-    app.run("0.0.0.0:$PORT")
+    app.run(f"0.0.0.0:{PORT}")
 
