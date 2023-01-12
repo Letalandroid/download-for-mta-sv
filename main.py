@@ -26,6 +26,7 @@ config = cloudinary.config(secure=True)
 # Backend
 app = Flask(__name__)
 CORS(app)
+app.config['CORS_HEADERS'] = 'Access-Control-Allow-Origin'
 
 @app.route('/', methods=["GET"])
 def home():
@@ -78,5 +79,5 @@ def index():
 PORT = os.getenv('PORT')
 
 if __name__ == '__main__':
-    app.run('0.0.0.0', PORT)
+    app.run('0.0.0.0')
 
