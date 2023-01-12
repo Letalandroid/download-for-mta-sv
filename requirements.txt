@@ -2,4 +2,3 @@ pytube
 flask
 flask_cors
 dotenv
-json
