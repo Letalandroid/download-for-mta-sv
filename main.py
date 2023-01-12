@@ -5,6 +5,9 @@ from urllib.parse import quote
 from flask import Flask, request, render_template
 from flask_cors import CORS
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv()
+import os
 
 # Import the Cloudinary libraries
 # ==============================
@@ -15,7 +18,6 @@ import cloudinary
 # Import to format the JSON responses
 # ==============================
 import json
-PORT = ""
 
 # Set configuration parameter: return "https" URLs by setting secure=true
 # ==============================
@@ -73,6 +75,9 @@ def index():
     response_data = {'url_direct': f'https://res.cloudinary.com/del5cxt4n/video/upload/v1666749891/music-mta/{quote(file_path)}'}
     return response_data
 
+PORT = os.getenv('PORT')
+
 if __name__ == '__main__':
-    app.run(f"0.0.0.0:{PORT}")
+    print(PORT)
+    app.run(f'0.0.0.0:{PORT}')
 
